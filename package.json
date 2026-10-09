@@ -1,0 +1,14 @@
+{
+  "name": "prompt-generator",
+  "version": "1.0.0",
+  "description": "Générateur de prompts photo réalistes",
+  "main": "app.py",
+  "nitron": {
+    "name": "Générateur Prompts",
+    "bundleId": "com.tonnom.promptgenerator",
+    "version": "1.0.0",
+    "webRoot": ".",
+    "entryPoint": "index.html",
+    "dataDir": "data"
+  }
+}
