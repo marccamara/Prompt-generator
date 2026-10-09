@@ -1,0 +1,101 @@
+# Format : [balise] expression  ou  expression | balise
+# Balises : C = Caméra avant | M = Miroir | D = Distance | S = Selfie bras tendu | ALL = tous
+# ============================================================
+
+[ALL] looking directly at the lens with a calm and collected demeanor
+[ALL] looking sideways with a subtle moody aesthetic
+[ALL] gazing softly into the distance with a dreamy expression
+[C,S] looking at the camera with a natural slight smile
+[M] looking at the mirror reflection with a playful expression
+[D] caught in a candid moment, looking away from the camera
+[ALL] expressing quiet confidence with a relaxed gaze
+[D] looking at the lens from a distance with a serene expression
+[M,C,S] giving a soft half-smile with a hint of shyness
+[ALL] expressing a natural candid moment, caught off guard
+[ALL] with a neutral calm expression, lips slightly parted
+[M,C,S] with a warm friendly expression, eyes slightly narrowed
+[ALL] with a subtle thoughtful look, eyes focused softly
+[D] with a relaxed open expression, shoulders slightly turned
+[C,S] with a natural confident gaze directly at the lens
+[ALL] with a gentle dreamy expression, eyes half closed
+[ALL] with a calm neutral face, no smile, natural
+[ALL] with a slight head tilt and a soft expression
+[ALL] with a contemplative look, eyes slightly downcast
+[ALL] with a natural relaxed face, lips softly closed
+[ALL] with a soft gaze into the lens, subtle expression
+[ALL] with a quiet confidence, eyes steady on the camera
+[ALL] with a slightly raised eyebrow, playful subtle look
+[ALL] with a gentle smile barely visible, eyes warm
+[ALL] with a neutral expression and a very slight pout
+[ALL] with a soft dreamy look, eyes slightly unfocused
+[ALL] with a calm and collected expression, head straight
+[ALL] with a subtle smile, lips closed, eyes warm
+[ALL] with a natural candid expression, no pose
+[ALL] with a thoughtful gaze, eyes looking slightly up
+[ALL] with a relaxed and open face, natural demeanor
+[ALL] with a soft half-smile, eyes meeting the lens
+[ALL] with a slightly serious expression, calm eyes
+[ALL] with a natural expression, lips slightly parted
+[ALL] with a gentle gaze, eyes soft and focused
+[ALL] with a calm face, no exaggerated emotion
+[ALL] with a subtle look of curiosity, eyes slightly narrowed
+[ALL] with a warm expression, eyes soft on the lens
+[ALL] with a quiet expression, natural and unposed
+[ALL] with a neutral calm look, eyes steady
+[ALL] with a subtle playful glance, eyes slightly to the side
+[ALL] with a relaxed expression, natural lips
+[ALL] with a soft look, eyes gentle and calm
+[ALL] with a natural candid gaze, caught in a moment
+[ALL] with a calm demeanor, eyes softly on the camera
+[ALL] with a subtle mysterious look, eyes half closed
+[ALL] with a gentle expression, natural head position
+[ALL] with a thoughtful look, eyes slightly to the side
+[ALL] with a soft neutral face, natural posture
+[ALL] with a calm expression, eyes direct and clear
+[ALL] with a subtle smile, lips just barely curved
+[ALL] with a natural look, no forced expression
+[ALL] with a serene gaze, eyes soft and relaxed
+[ALL] with a calm and quiet face, natural demeanor
+[ALL] with a soft expression, eyes slightly narrowed
+[ALL] with a natural look, eyes meeting the lens calmly
+[ALL] with a gentle demeanor, relaxed facial muscles
+[ALL] with a subtle thoughtful expression, eyes calm
+[ALL] with a neutral calm face, natural and unposed
+[ALL] with a soft gaze, eyes gently on the camera
+[ALL] with a relaxed expression, subtle confidence
+[ALL] with a natural candid look, unposed
+[ALL] with a calm expression, eyes gently focused
+[ALL] with a subtle dreamy look, eyes soft
+[ALL] with a natural smile barely there, eyes warm
+[ALL] with a quiet confidence, eyes steady on the lens
+[ALL] with a relaxed face, natural and unposed
+[ALL] with a soft neutral look, eyes calm
+[ALL] with a subtle mysterious gaze, eyes half closed
+[ALL] with a natural candid expression, calm
+[ALL] with a warm subtle smile, eyes gently on the lens
+[ALL] with a calm look, natural and relaxed
+[ALL] with a soft thoughtful expression, eyes downcast
+[ALL] with a natural expression, subtle and unposed
+[ALL] with a relaxed gaze, eyes gently on the camera
+[ALL] with a calm demeanor, natural facial expression
+[ALL] with a soft look, eyes calm and clear
+[ALL] with a natural expression, no forced smile
+[ALL] with a subtle playful look, eyes slightly narrowed
+[ALL] with a calm face, natural and unposed
+[ALL] with a soft dreamy expression, eyes half closed
+[ALL] with a natural gaze, eyes meeting the lens calmly
+[ALL] with a quiet expression, subtle confidence
+[ALL] with a calm look, eyes gently focused on the lens
+[ALL] with a soft neutral expression, natural posture
+[ALL] with a thoughtful subtle look, eyes slightly down
+[ALL] with a natural smile, lips softly curved
+[ALL] with a calm and collected look, eyes steady
+[ALL] with a soft expression, natural and relaxed
+[ALL] with a subtle candid look, unposed
+[ALL] with a natural face, eyes gently on the camera
+[ALL] with a calm expression, subtle and unforced
+[ALL] with a soft thoughtful gaze, eyes calm
+[ALL] with a natural look, quiet and unposed
+[ALL] with a relaxed expression, eyes softly on the lens
+[ALL] with a calm demeanor, natural and unforced
+[ALL] with a subtle dreamy look, eyes half closed
