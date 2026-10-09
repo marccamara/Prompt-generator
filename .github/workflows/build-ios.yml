@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-ios:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout code
@@ -18,15 +18,14 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install nitron
-        run: npm install -g nitron
+      - name: Install ios-builder
+        run: brew install mobai-app/tap/ios-builder
 
       - name: Build IPA
-        run: |
-          nitron build --target ios --output build/
+        run: builder ios build --unsigned
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
           name: prompt-generator-ipa
-          path: build/*.ipa
+          path: dist/*.ipa
