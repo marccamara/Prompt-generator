@@ -22,7 +22,7 @@ jobs:
         run: brew install mobai-app/tap/ios-builder
 
       - name: Initialize builder config
-        run: builder init
+        run: echo "Prompt-generator" | builder init
 
       - name: Build IPA
         run: builder ios build --unsigned
