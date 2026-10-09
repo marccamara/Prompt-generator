@@ -1,0 +1,115 @@
+# Format : posture | balise
+# Balises : C = Caméra avant | M = Miroir | D = Distance | S = Selfie bras tendu
+# ============================================================
+
+[Debout]
+standing naturally with weight shifted to one hip, one hand in pocket | C,M,D,S
+standing by a window looking outside, arms loosely crossed | C,M,D
+standing with one hand on hip and the other touching hair, casual pose | C,M,S
+standing straight with both arms at sides, shoulders relaxed | C,M,D
+leaning slightly forward with hands clasped in front, attentive posture | C,D
+standing with one foot forward, hands in back pockets | M,D
+standing with arms crossed, weight on one leg, confident posture | C,M,D
+standing with hands behind back, chest slightly open, calm posture | C,M,D
+standing sideways to the camera, one hand on hip, profile view | C,D
+standing with one hand touching the necklace, soft pose | C,M,S
+standing with both hands in front pockets, shoulders slightly forward | C,M,D
+standing with one arm resting on a hip, slight body curve | C,M,S
+standing with both arms hanging loose, natural relaxed posture | C,D
+standing with one hand on the thigh, subtle weight shift | C,M,D
+standing with hands in front, fingers softly intertwined | C,M,S
+standing close to a wall, one hand touching it, looking away | C,M,D
+standing with one knee slightly bent, casual weight distribution | C,M,D
+standing with hands clasped behind her back, chest slightly lifted | D
+standing with one hand on the back of her neck, relaxed | C,M,S
+standing with arms slightly open, palms facing forward | C,M,D
+
+[Assise]
+sitting on the edge of a bed with legs crossed, hands on knees | C,D
+sitting cross-legged on a couch, hands resting on thighs | C,D
+sitting on a chair leaning back slightly, one arm on the backrest | C,D
+sitting on the floor with knees pulled up, arms wrapped around them | D
+sitting on a windowsill with legs dangling, palms flat on the sill | C,D
+sitting on a stool with legs crossed at ankles, hands on lap | C,D
+sitting on the floor with legs stretched forward, hands on floor behind | D
+sitting cross-legged with elbows on knees, chin on hands | C,D
+sitting on a chair with one leg crossed over the other, hand on knee | C,D
+sitting sideways on a couch, one leg tucked under, arm on backrest | C,D
+sitting on the floor leaning back on palms, legs slightly apart | D
+sitting on the edge of a bed with one leg extended forward | C,D
+sitting on a low stool, elbows on knees, hands together | C,D
+sitting on a bench with legs crossed at ankles, hands on thighs | D
+sitting on a chair, body turned slightly, one arm over the backrest | C,D
+sitting on a couch with one knee up, arm wrapped around it | C,D
+sitting on the floor with legs bent to one side, hand on the ankle | D
+sitting cross-legged on a bed, hands resting on the knees | C,D
+sitting on a chair, one elbow on the knee, chin on the hand | C,D
+sitting on the edge of a bed with legs dangling, hands on the mattress | C,D
+
+[Allongée]
+lying flat on a bed on her back, arms relaxed at sides | C,D
+lying on her side with one arm under her head, knees slightly bent | C,D
+lying on her stomach propped up on elbows, looking forward | C,D
+lying diagonally across a bed with arms stretched above head | C,D
+lying on a couch with legs crossed at ankles, one hand on stomach | C,D
+lying on her back with one knee bent, hand behind head | C,D
+lying on her side facing the camera, one hand on the hip | C,D
+lying on a bed with arms stretched to one side, looking up | C,D
+lying on her stomach with legs bent at the knees, feet up | C,D
+lying on a rug on the floor, one arm under the head, relaxed | D
+
+[Mur]
+leaning against a wall with one shoulder, hands in pockets | C,M,D
+leaning against a wall with one foot flat on it behind her | C,M,D
+back flat against a wall, arms crossed, looking straight ahead | C,M,D
+leaning against a doorway frame, one hand on the frame | C,M,D
+pressed gently against a wall, looking sideways, hands behind back | C,M,D
+leaning with one shoulder, one leg crossed over the other | C,M,D
+leaning back against a wall, hands resting on the wall behind | C,M,D
+leaning sideways against a wall, one arm fully extended on it | C,M,D
+leaning against a corner, one hand on each wall | C,M,D
+leaning with the side of the body, arms crossed loosely | C,M,D
+
+[Miroir Actif]
+taking a quick mirror selfie holding phone at chest height | M
+full-length mirror selfie showing the whole outfit, phone held vertically | M
+half-body mirror selfie with one hand on hip, phone in the other | M
+kneeling in front of a mirror taking a selfie, phone at face level | M
+side mirror selfie, head turned slightly, phone raised to eye level | M
+mirror selfie with the phone held high above the head | M
+mirror selfie with the phone at waist level, looking down at the screen | M
+mirror selfie with one hand holding the phone and the other in a pocket | M
+mirror selfie taken from the side, body slightly angled | M
+mirror selfie with the phone held at chin level, slight tilt | M
+mirror selfie with the phone at eye level, both hands visible | M
+mirror selfie with the phone held close to the chest, elbows in | M
+mirror selfie from a low angle, phone held at hip level | M
+mirror selfie with the phone slightly tilted, casual vibe | M
+mirror selfie with the phone held in one hand, other hand on hip | M
+mirror selfie with a subtle lean, phone at chest level | M
+mirror selfie with the phone slightly above eye level, looking up | M
+mirror selfie with the phone in the left hand, right hand on the hip | M
+mirror selfie with the phone held at shoulder height, tilted head | M
+mirror selfie with the phone held diagonally, casual stance | M
+
+[Selfie Bras Tendu]
+holding phone at arm's length with one arm extended, front camera | S
+taking a quick selfie with the phone raised at eye level | S
+selfie with the phone held slightly above eye level, looking up | S
+selfie with the phone held at chest level, looking down slightly | S
+selfie with the phone extended forward, arm fully straight | S
+selfie with the phone held high, chin slightly lifted | S
+selfie with the phone at eye level, head slightly tilted | S
+selfie with the phone held in one hand, other hand on the hip | S
+selfie with the phone raised and slightly tilted to the side | S
+selfie with the phone held at arm's length, looking away | S
+selfie with the phone held close to the face, soft smile | S
+selfie with the phone held above the head, looking up | S
+selfie with the phone at chest height, subtle tilt | S
+selfie with the phone held vertically, natural posture | S
+selfie with the phone held diagonally, casual expression | S
+selfie with the phone extended, one shoulder slightly forward | S
+selfie with the phone held at eye level, slight lean forward | S
+selfie with the phone held high, arm partially visible | S
+selfie with the phone at chin level, natural smile | S
+selfie with the phone held in the right hand, left hand in pocket | S
