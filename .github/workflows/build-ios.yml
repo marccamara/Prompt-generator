@@ -21,6 +21,9 @@ jobs:
       - name: Install ios-builder
         run: brew install mobai-app/tap/ios-builder
 
+      - name: Initialize builder config
+        run: builder init
+
       - name: Build IPA
         run: builder ios build --unsigned
 
