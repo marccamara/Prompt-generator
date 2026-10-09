@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Générateur Prompts</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, sans-serif;
+            background: #f0f0f0;
+            padding: 15px;
+            margin: 0;
+            padding-bottom: 40px;
+        }
+        h2 { text-align: center; color: #333; margin: 10px 0 20px; }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        label.section-title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 15px;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background: #fafafa;
+        }
+        textarea { resize: vertical; font-family: inherit; }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .checkbox-group label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            color: #333;
+        }
+        .checkbox-group input { width: 20px; height: 20px; }
+        button.main-btn {
+            width: 100%;
+            padding: 16px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button.main-btn:active { background: #3d8b40; }
+        .prompt-box {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 13px;
+            border: 1px solid #ddd;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .prompt-title {
+            font-weight: bold;
+            color: #2196F3;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        button.copy-btn {
+            background: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        button.copy-btn:active { background: #0b7dda; }
+        #status {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Générateur Prompts</h2>
+
+    <div class="card">
+        <label class="section-title">📐 Format de sortie</label>
+        <select id="format">
+            <option value="9:16">9:16 (Story / Reels)</option>
+            <option value="3:4" selected>3:4 (Portrait iPhone)</option>
+            <option value="1:1">1:1 (Carré Instagram)</option>
+            <option value="4:5">4:5 (Post Instagram)</option>
+            <option value="16:9">16:9 (Paysage)</option>
+            <option value="2:3">2:3 (Portrait photo)</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <label class="section-title">📸 Cadrage caméra</label>
+        <select id="cadrage">
+            <option value="Miroir">Selfie Miroir</option>
+            <option value="CamAvant">Caméra Avant</option>
+            <option value="Distance">Prise de vue loin (corps entier)</option>
+            <option value="BrasTendu">Selfie Bras Tendu</option>
+            <option value="Aléatoire">Aléatoire / Mix</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <label class="section-title">👗 Description de la tenue</label>
+        <textarea id="tenue" rows="4" placeholder="Colle ici ta description détaillée (ex: a ruby red velvet two-piece set with a camisole top with a V-neck, two bow ties, and an asymmetric pointed hem, paired with a medium wash distressed denim mini-skirt with a raw hem)"></textarea>
+    </div>
+
+    <div class="card">
+        <label class="section-title">🧍 Postures</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="p_debout" checked> Debout</label>
+            <label><input type="checkbox" id="p_assise" checked> Assise</label>
+            <label><input type="checkbox" id="p_allongee" checked> Allongée</label>
+            <label><input type="checkbox" id="p_mur" checked> Mur</label>
+            <label><input type="checkbox" id="p_miroir" checked> Miroir Actif</label>
+            <label><input type="checkbox" id="p_bras" checked> Selfie Bras Tendu</label>
+        </div>
+    </div>
+
+    <button class="main-btn" onclick="generer()">GÉNÉRER 4 PROMPTS</button>
+    <div id="status"></div>
+
+    <div id="resultats"></div>
+
+    <script>
+        async function generer() {
+            const options = {
+                format: document.getElementById('format').value,
+                cadrage: document.getElementById('cadrage').value,
+                tenue: document.getElementById('tenue').value,
+                postures: []
+            };
+            if(document.getElementById('p_debout').checked) options.postures.push('Debout');
+            if(document.getElementById('p_assise').checked) options.postures.push('Assise');
+            if(document.getElementById('p_allongee').checked) options.postures.push('Allongée');
+            if(document.getElementById('p_mur').checked) options.postures.push('Mur');
+            if(document.getElementById('p_miroir').checked) options.postures.push('Miroir Actif');
+            if(document.getElementById('p_bras').checked) options.postures.push('Selfie Bras Tendu');
+
+            document.getElementById('status').textContent = 'Génération en cours...';
+            document.getElementById('resultats').innerHTML = '';
+
+            try {
+                let prompts;
+                // Appel via le pont nitron (à adapter selon la doc)
+                if (window.nitron && window.nitron.call) {
+                    const result = await window.nitron.call('generate_prompts', JSON.stringify(options));
+                    prompts = JSON.parse(result);
+                } else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.nitron) {
+                    // Fallback iOS natif
+                    window.webkit.messageHandlers.nitron.postMessage(JSON.stringify(options));
+                    prompts = ["En attente de la réponse native..."];
+                } else {
+                    // Mode test (navigateur PC)
+                    prompts = [
+                        "MODE TEST : Le pont natif n'est pas disponible. Voici un exemple de prompt.\n\nA highly detailed, high-resolution photo taken on an iPhone. Format: " + options.format + " portrait orientation. Single image only.\n\nCRITICAL COMPOSITION RULE: Leave a large empty space above the subject's head...\n\nCRITICAL: The woman in the generated image must be IDENTICAL to the reference image...\n\nCompletely bare face with absolutely no makeup...\n\nfeaturing her with a natural expression, wearing " + (options.tenue || "a simple outfit") + "."
+                    ];
+                }
+
+                const div = document.getElementById('resultats');
+                div.innerHTML = '';
+                prompts.forEach((p, i) => {
+                    const box = document.createElement('div');
+                    box.className = 'prompt-box';
+                    const title = document.createElement('div');
+                    title.className = 'prompt-title';
+                    title.textContent = '=== PROMPT ' + (i+1) + ' ===';
+                    box.appendChild(title);
+                    const text = document.createElement('div');
+                    text.textContent = p;
+                    box.appendChild(text);
+                    const btn = document.createElement('button');
+                    btn.className = 'copy-btn';
+                    btn.textContent = '📋 Copier';
+                    btn.onclick = () => {
+                        navigator.clipboard.writeText(p).then(() => {
+                            btn.textContent = '✅ Copié !';
+                            setTimeout(() => btn.textContent = '📋 Copier', 1500);
+                        });
+                    };
+                    box.appendChild(btn);
+                    div.appendChild(box);
+                });
+
+                document.getElementById('status').textContent = '4 prompts générés !';
+            } catch (e) {
+                document.getElementById('status').textContent = 'Erreur : ' + e.message;
+            }
+        }
+    </script>
+</body>
+</html>
