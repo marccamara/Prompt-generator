@@ -1,0 +1,77 @@
+# Format : [balise] description  ou  description | balise
+# Balises : C = Caméra avant | M = Miroir | D = Distance | S = Selfie bras tendu | ALL = tous
+# ============================================================
+
+[ALL] a cozy bedroom with an unmade bed, warm ambient light, clothes on a chair
+[ALL] a sunlit modern apartment bedroom with soft white linens and wooden furniture
+[ALL] a bohemian style bedroom with macrame, plants, and fairy lights
+[ALL] a minimalist bedroom with plain walls and a large floor mirror
+[ALL] a modern living room with a sofa, a plant, and framed art
+[ALL] a cozy living room with a book on a coffee table and a warm lamp
+[ALL] a spacious studio apartment with large windows and soft natural light
+[ALL] a warm bedroom with fairy lights, plants, and a soft rug
+[ALL] a simple bedroom with a wooden bed and neutral bedding
+[ALL] a bright bedroom with sheer white curtains and morning light
+[ALL] a cozy reading corner with a blanket, a book, and a cup of tea
+[ALL] a modern kitchen with a cup of coffee on the counter
+[ALL] a dining room with a wooden table and a vase of flowers
+[ALL] a hallway with a wooden floor and a mirror on the wall
+[ALL] a stairwell with natural light coming from above
+[ALL] a balcony with plants and a view of the city
+[ALL] a rooftop terrace with a view of the skyline at dusk
+[ALL] a garden with soft green foliage and natural daylight
+[ALL] a wooden cabin interior with a fireplace and soft light
+[ALL] a loft apartment with exposed beams and large windows
+[ALL] a vintage-style room with old furniture and warm tones
+[ALL] a modern studio with white walls and a single plant
+[ALL] a cozy attic room with sloped ceilings and a small window
+[ALL] a quiet library corner with tall bookshelves
+[ALL] a small art studio with paint splatters and natural light
+[ALL] a yoga room with a mat and soft morning light
+[ALL] a bathroom with a large mirror and warm ambient light
+[ALL] a walk-in closet with clothes and a full-length mirror
+[ALL] a soft pink bedroom with fluffy pillows and warm light
+[ALL] a neutral bedroom with beige tones and a wooden floor
+
+[C,S] a cozy café terrace with a coffee cup on the table, natural daylight
+[C,S] a warm restaurant interior with a glass of wine, ambient lighting
+[C,S] a brunch spot with a plate of food, natural window light
+[C,S] a bakery with pastries and warm light
+[C,S] a small coffee shop with wooden tables and soft music
+[C,S] a rooftop café with a view and warm afternoon light
+[C,S] a tea room with soft pastel colors and natural light
+[C,S] a bookstore café with shelves of books behind
+[C,S] a corner café with large windows and natural light
+[C,S] a busy brunch restaurant with blurred background
+
+[D] a city street with blurred passersby, daylight, candid moment
+[D] a park bench surrounded by trees, golden hour lighting
+[D] a quiet residential street with trees, soft afternoon light
+[D] standing in front of a building facade, urban setting
+[D] a beach at sunset with soft waves in the background
+[D] a forest path with dappled sunlight through the trees
+[D] a garden with blooming flowers and soft daylight
+[D] a rooftop with a city skyline in the background
+[D] a bridge with a river view and soft afternoon light
+[D] a riverside walk with trees and natural light
+[D] a mountain viewpoint with a soft horizon
+[D] a quiet alley with brick walls and soft light
+[D] a public square with old buildings and warm light
+[D] a train station platform with blurred motion
+[D] a museum interior with soft ambient light
+[D] a historical street with old architecture
+[D] a harbor with boats and soft daylight
+[D] a lake shore with gentle ripples and warm light
+[D] a countryside field with tall grass and soft light
+[D] a vineyard with rows of vines and afternoon sun
+
+[M] a bathroom with a large mirror, warm light, plants on shelves
+[M] a bedroom with a full-length mirror, soft bedding visible
+[M] a dressing room with a large mirror, warm lighting
+[M] a hallway with a tall mirror, wooden floor, soft light
+[M] a walk-in closet with a mirror, clothes visible
+[M] a living room with a mirror above a console table
+[M] a bedroom with a round mirror on the wall
+[M] a modern bathroom with a mirror and white tiles
+[M] a vintage-style dressing room with an antique mirror
+[M] a small entryway with a mirror and a coat rack
